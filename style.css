@@ -1,0 +1,100 @@
+*{
+	font-family: "montserrat" ,sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.page{
+	background: #f1f1f1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page img{
+	margin-top: 5px;
+  	margin-left: 10px;
+	height: 65px;
+}
+
+.col{
+	flex: 1;
+	height: 100vh;
+	position: relative;
+}
+
+.countdown-col{
+	background: url(images/bg-3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+countdown-col img{
+	margin-top: 2px;
+  	margin-left: 1px;
+  	height: 12px;
+}
+
+.time{
+	color: white;
+	text-transform: uppercase;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.time span{
+	padding: 0 14px;
+	font-size: 10px;
+}
+
+.time span div{
+	font-size: 40px;
+}
+
+.newsletter{
+	width: 90%;
+}
+
+.newsletter h4{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.newsletter input{
+	display: block;
+	margin: 12px auto;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+	padding: 14px 20px;
+	border-radius: 30px;
+	border: 1px solid #ddd;
+	outline: none;
+}
+
+.newsletter-btn{
+	background: linear-gradient(125deg,#3498db,#34495e);
+	color: white;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.newsletter-btn:hover{
+	opacity: .7;
+}
+
+@media screen and (max-width: 900px){
+	.col{
+		flex: 100%;
+	}
+}
